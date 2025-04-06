@@ -58,7 +58,6 @@ void Time::setPeriod(string period){
 }
 
 int Time::getHour() const {return hour;}
-
 int Time::getMinute() const {return minute;}
 int Time::getSecond() const {return minute;}
 string Time::getPeriod() const {
@@ -73,10 +72,9 @@ void Time::show12h() const {
     << getPeriod() << endl;
 }
 void Time::show24h() const {
-    int hour24;
-    if(isAm) hour24 = hour;
-    else hour24 = hour + 12;
-    cout << setfill('0') << setw(2) << hour << "h, "
+    int hour24 = hour;
+    if(!isAm) hour24 = hour + 12;
+    cout << setfill('0') << setw(2) << hour24 << "h, "
     << setw(2) << minute << "m, "
     << setw(2) << second << "s " << endl;
 }

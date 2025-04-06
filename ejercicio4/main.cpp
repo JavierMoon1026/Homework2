@@ -3,8 +3,8 @@
 #include "CuentaCorriente.h"
 
 int main() {
-    cajaDeAhorro caja("Javier Moon", 100.0);
-    cuentaCorriente corriente("Javier Moon", 50.0);
+    CajaDeAhorro caja("Javier Moon", 100.0);
+    CuentaCorriente corriente("Javier Moon", 50.0);
 
     caja.depositar(50);
     corriente.depositar(100);

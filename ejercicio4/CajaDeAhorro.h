@@ -3,15 +3,15 @@
 #pragma once
 using namespace std;
 
-class cuentaCorriente;
+class CuentaCorriente;
 
-class cajaDeAhorro : public cuentaBancaria{
+class CajaDeAhorro : public CuentaBancaria{
     private:
         int contador;
 
     public:
-        cajaDeAhorro(string nombre, double saldo);
+        CajaDeAhorro(string nombre, double saldo);
         void retirar(double monto) override;
         void mostrarInfo() override;
-        friend class cuentaCorriente;
+        friend class CuentaCorriente;
 };

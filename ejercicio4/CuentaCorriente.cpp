@@ -1,8 +1,16 @@
 #include "CuentaCorriente.h"
 
-cuentaCorriente::cuentaCorriente(string nombre, double saldo) : cuentaBancaria(nombre, saldo){}
+CuentaCorriente::CuentaCorriente(string nombre, double saldo) : CuentaBancaria(nombre, saldo){}
 
-void cuentaCorriente::retirar(double monto, cajaDeAhorro& ahorro) {
+void CuentaCorriente::retirar(double monto) {
+    if (monto <= balance) {
+        balance -= monto;
+    } else {
+        cout << "Fondos insuficientes en Cuenta Corriente. Intentando con Caja de Ahorro..." << endl;
+    }
+}
+
+void CuentaCorriente::retirar(double monto, CajaDeAhorro& ahorro) {
     if (monto <= balance) {
         balance -= monto;
     } else if (monto <= (balance + ahorro.balance)) {
@@ -15,6 +23,6 @@ void cuentaCorriente::retirar(double monto, cajaDeAhorro& ahorro) {
     }
 }
 
-void cuentaCorriente::mostrarInfo() {
+void CuentaCorriente::mostrarInfo() {
     cout << "[CUENTA CORRIENTE] Titular: " << titularCuenta << ", Balance: $" << balance << std::endl;
 }

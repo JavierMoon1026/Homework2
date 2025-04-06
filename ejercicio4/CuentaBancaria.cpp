@@ -1,10 +1,10 @@
 #include "CuentaBancaria.h"
 
-cuentaBancaria::cuentaBancaria(string nombre, double saldoInicial){
+CuentaBancaria::CuentaBancaria(string nombre, double saldoInicial){
     titularCuenta = nombre;
     balance = saldoInicial;
 }
 
-void cuentaBancaria::depositar(double monto) {
+void CuentaBancaria::depositar(double monto) {
     balance += monto;
 }

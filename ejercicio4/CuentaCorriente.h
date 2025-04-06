@@ -1,13 +1,14 @@
+#pragma once
 #include <iostream>
 #include "CuentaBancaria.h"
 #include "CajaDeAhorro.h"
-#pragma once
 using namespace std;
 
-class cuentaCorriente : public cuentaBancaria{
+class CuentaCorriente : public CuentaBancaria{
     public:
-        cuentaCorriente(string nombre, double saldo);
+        CuentaCorriente(string nombre, double saldo);
+
         void retirar(double monto) override;
-        void retirar(double monto, cajaDeAhorro& ahorro);
+        void retirar(double monto, CajaDeAhorro& ahorro);
         void mostrarInfo() override;
 };

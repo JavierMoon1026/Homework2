@@ -21,7 +21,7 @@ int main(){
         switch (opcion1) {
             case 1:
                 t = Time();
-                cout << "Inicializado sin parámetros:\n";
+                cout << "Inicializado sin parámetros:" << endl;
                 t.show12h();
                 estado1 = false;
                 break;
@@ -75,7 +75,7 @@ int main(){
                 break;
 
             default:
-                cout << "Opción inválida.\n";
+                cout << "Opcion invalida." << endl;
         }
         
     }
@@ -100,19 +100,19 @@ int main(){
 
         switch (opcion2) {
             case 1:
-                cout << "Hora actual: " << t.getHour() << "\n";
+                cout << "Hora actual: " << t.getHour() << endl;
                 break;
 
             case 2:
-                cout << "Minutos actuales: " << t.getMinute() << "\n";
+                cout << "Minutos actuales: " << t.getMinute() << endl;
                 break;
 
             case 3:
-                cout << "Segundos actuales: " << t.getSecond() << "\n";
+                cout << "Segundos actuales: " << t.getSecond() << endl;
                 break;
 
             case 4:
-                cout << "Periodo actual: " << t.getPeriod() << "\n";
+                cout << "Periodo actual: " << t.getPeriod() << endl;
                 break;
 
             case 5:
@@ -152,7 +152,7 @@ int main(){
                 break;
 
             default:
-                cout << "Opción inválida.\n";
+                cout << "Opcion invalida." << endl;
         }
     }
 

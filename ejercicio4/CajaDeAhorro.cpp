@@ -1,8 +1,8 @@
 #include "CajaDeAhorro.h"
 
-cajaDeAhorro::cajaDeAhorro(std::string nombre, double saldo) : cuentaBancaria(nombre, saldo), contador(0){}
+CajaDeAhorro::CajaDeAhorro(std::string nombre, double saldo) : CuentaBancaria(nombre, saldo), contador(0){}
 
-void cajaDeAhorro::retirar(double monto) {
+void CajaDeAhorro::retirar(double monto) {
     if (monto > balance) {
         cout << "Fondos insuficientes en Caja de Ahorro." << endl;
     } else {
@@ -10,7 +10,7 @@ void cajaDeAhorro::retirar(double monto) {
     }
 }
 
-void cajaDeAhorro::mostrarInfo() {
+void CajaDeAhorro::mostrarInfo() {
     cout << "[CAJA DE AHORRO] Titular: " << titularCuenta << ", Balance: $" << balance << endl;
     cout << "Balance: $" << balance << ", Caja de Ahorro, Titular: " << titularCuenta << endl;
     contador++;
