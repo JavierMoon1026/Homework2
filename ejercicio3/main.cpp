@@ -1,6 +1,7 @@
 #include "numero.h"
 
 int main(){
+    //Ejemplos con numeros enteros
     entero e1(2), e2(4);
     numero* eSuma = e1.suma(e2);
     cout << "Suma de enteros: " << eSuma->toString() << endl;
@@ -12,6 +13,7 @@ int main(){
     cout << "Multiplicacion de enteros: " << eMultiplicacion->toString() << endl;
     delete eMultiplicacion;
 
+    //Ejemplos con numeros reales
     real r1(1.3), r2(3.2);
     numero* rSuma = r1.suma(r2);
     cout << "Suma de reales: " << rSuma->toString() << endl;
@@ -23,6 +25,7 @@ int main(){
     cout << "Multiplicacion de reales: " << rMultiplicacion->toString() << endl;
     delete rMultiplicacion;
 
+    //Ejemplos con numeros complejos
     complejo c1(1, 4), c2(7, 2);
     numero* cSuma = c1.suma(c2);
     cout << "Suma de complejos: " << cSuma->toString() << endl;

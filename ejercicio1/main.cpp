@@ -75,7 +75,7 @@ int main(){
                 break;
 
             default:
-                cout << "Opcion invalida." << endl;
+                cout << "Opcion invalida" << endl;
         }
         
     }
@@ -152,7 +152,7 @@ int main(){
                 break;
 
             default:
-                cout << "Opcion invalida." << endl;
+                cout << "Opcion invalida" << endl;
         }
     }
 

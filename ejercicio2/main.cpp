@@ -20,19 +20,19 @@ int main(){
     curso.inscribir(e3);
 
     // Probar estaInscripto
-    cout << "¿Carlos Pérez está inscripto? " << (curso.estaInscripto(1002) ? "Sí" : "No") << endl;
+    cout << "¿Carlos Ramirez está inscripto? " << (curso.estaInscripto(1002) ? "Sí" : "No") << endl;
 
     // Probar estaCompleto (con menos de 20)
     cout << "¿Curso completo? " << (curso.cursoCompleto() ? "Sí" : "No") << endl;
 
     // Imprimir estudiantes ordenados alfabéticamente
-    cout << "\nestudiantes ordenados por nombre:" << endl;
+    cout << "Estudiantes ordenados por nombre:" << endl;
     curso.imprimirLista();
 
     // Desinscribir un estudiante
-    curso.desinscribir(1002); // Carlos Pérez
+    curso.desinscribir(1002); // Carlos Ramirez
 
-    cout << "\nDespués de desinscribir a Carlos:" << endl;
+    cout << "Después de desinscribir a Carlos:" << endl;
     curso.imprimirLista();
 
     // Mostrar Curso con operador <<
@@ -44,3 +44,9 @@ int main(){
 
     return 0;
 }
+
+/*
+La relacion entre estos dos objetos Curso y estudiante es del tipo agregacion, 
+ya que un curso tiene una coleccion de estudiantes pero estos pueden exisitir
+de forma independiente al curso
+*/
